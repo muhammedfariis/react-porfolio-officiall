@@ -1,14 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function About() {
-  const Navigate = useNavigate();
-
   return (
     <>
       <div className="min-h-screen flex justify-center items-center">
         <div className="flex justify-center items-center gap-20">
           <div className="h-96 w-96 bg-black"></div>
-          <div className="">
+          <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <h1 className="text-3xl font-bold">ABOUT-ME</h1>
               <p className="max-w-lg text-sm">
@@ -28,14 +26,52 @@ function About() {
                 applications.
               </p>
             </div>
-            <div className="imageslogo">
-                <img src="/frontend/public/images/react.png" alt="" />
-                <img src="/frontend/public/images/js.png" alt="" />
-                <img src="/frontend/public/images/tailwind.png" alt="" />
-                <img src="/frontend/public/images/html.png" alt="" />
-                <img src="/frontend/public/images/css.png" alt="" />
-
+            <div className="flex space-x-7">
+              <img
+                className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120"
+                src="/public/images/react.png"
+                alt=""
+              />
+              <img
+                className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120"
+                src="/public/images/js.png"
+                alt=""
+              />
+              <img
+                className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120"
+                src="/public/images/tailwind.png"
+                alt=""
+              />
+              <img
+                className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120"
+                src="/public/images/html.png"
+                alt=""
+              />
+              <img
+                className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120"
+                src="/public/images/css.png"
+                alt=""
+              />
+              <img
+                className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120"
+                src="/public/images/Express.png"
+                alt=""
+              />
+              <img
+                className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120"
+                src="/public/images/node-js.svg"
+                alt=""
+              />
             </div>
+            <Link
+              to="/public/pdf/MuhammedFaris_resume.pdf"
+              target="_blank"
+              download
+            >
+              <button className="h-10 w-40 bg-linear-to-bl from-yellow-400 border-2 border-gray-600 rounded-2xl transition duration-300 ease-in-out hover:scale-105">
+                Download-Resume
+              </button>
+            </Link>
           </div>
         </div>
       </div>
