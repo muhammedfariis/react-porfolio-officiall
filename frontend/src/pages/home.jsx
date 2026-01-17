@@ -12,7 +12,7 @@ function Home() {
         className="border-2 bg-transparent backdrop-blur-3xl h-10 w-36 flex items-center justify-center hover:animate-pulse hover:text-red-500
       transition-all duration-300 ease-in"
       >
-        <p>Count : {count}</p>
+       <p>Count : {count}</p>
       </div>
     );
   };
@@ -29,7 +29,7 @@ function Home() {
           <div className="flex justify-center items-center gap-2">
             <button
               className={`h-10 w-10 rounded-full bg-blue-950 transition-transform ${
-                !animate ? "animate-pulse" : ""
+                !animate ? "animate-pulse" : false
               } hover:bg-green-500 text-white hover:text-black `}
               onClick={() => {
                 setCount(count + 1);
@@ -39,7 +39,7 @@ function Home() {
               +
             </button>
             <button
-              className="h-10 w-10 rounded-full bg-blue-950 hover:animate-pulse hover:bg-green-500 text-white hover:text-black"
+              className="h-10 w-10 rounded-full bg-blue-950  hover:bg-red-600 text-white hover:text-black"
               onClick={() => {
                 setCount(count - 1);
               }}
@@ -76,13 +76,15 @@ function Home() {
           </div>
         </div>
         <div
-          className="bg-blue-950 h-60 w-60  rounded-full"
+          
+          className="bg-blue-950 h-80 w-80  rounded-full"
           style={{
             clipPath:
               "polygon(0% 0% , 100% 0% , 100% 50% , 75% 100% , 25% 100% , 0% 50%)",
           }}
         >
-          {" "}
+
+           <img className="relative bottom-8 mask-b-from-0.5 brightness-110" src="/public/images/faris.png" alt="" />
         </div>
       </div>
     </>

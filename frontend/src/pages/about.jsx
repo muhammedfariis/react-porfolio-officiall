@@ -1,11 +1,14 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
     <>
       <div className="min-h-screen flex justify-center items-center">
         <div className="flex justify-center items-center gap-20">
-          <div className="h-96 w-96 bg-black"></div>
+          <div className="h-96 w-96 ">
+            <div className="bg-black h-96 w-50 rounded-3xl "></div>
+            <img className="relative left-4 bottom-92 rounded-3xl" src="/public/images/faris.jpeg" alt="" />
+          </div>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <h1 className="text-3xl font-bold">ABOUT-ME</h1>

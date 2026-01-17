@@ -12,7 +12,6 @@ function Navbar() {
             <NavButton text="HOME" onClick={() => Navigate("/")} />
             <NavButton text="ABOUT" onClick={() => Navigate("/about")} />
             <NavButton text="PROJECT" onClick={() => Navigate("/project")} />
-
             <NavButton text="CONTACT" onClick={() => Navigate("/contact")} />
           </div>
 
