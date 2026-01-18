@@ -28,8 +28,8 @@ function Navbar() {
           <NavButton text="CONTACT" onClick={() => Navigate("/contact")} />
         </div>
 
-        <div className="flex justify-center items-center w-29">
-          <img src="/public/images/toggleforlight.svg" alt="" />
+        <div className="flex justify-center items-center rounded-full h-10 w-11 bg-amber-50 hover:-scale-y-100">
+          <img className="" src="/public/images/toggleforlight.svg" alt="" />
         </div>
       </nav>
     </div>
