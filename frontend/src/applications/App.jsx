@@ -3,6 +3,7 @@ import Navbar from "../components/common/navbar";
 import Home from "../pages/home";
 import About from "../pages/about";
 import Project from "../pages/project";
+import Footer from "../components/common/footer";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
 
         <Route path="/project" element={<Project />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

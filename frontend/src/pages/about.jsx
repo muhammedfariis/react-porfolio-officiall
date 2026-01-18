@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <>
-      <div className="min-h-screen flex justify-center items-center">
+    < >
+      <div className="min-h-screen flex justify-center items-center ">
         <div className="flex justify-center items-center gap-20">
           <div className="h-96 w-96 ">
             <div className="bg-black h-96 w-50 rounded-3xl "></div>

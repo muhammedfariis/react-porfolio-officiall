@@ -9,10 +9,10 @@ function Home() {
   const Box = () => {
     return (
       <div
-        className="border-2 bg-transparent backdrop-blur-3xl h-10 w-36 flex items-center justify-center hover:animate-pulse hover:text-red-500
+        className="border-2 bg-transparent backdrop-blur-3xl h-10 w-36 flex items-center justify-center hover:animate-pulse hover:text-blue-950 rounded-2xl
       transition-all duration-300 ease-in"
       >
-       <p>Count : {count}</p>
+        <p>Count : {count}</p>
       </div>
     );
   };
@@ -22,14 +22,17 @@ function Home() {
   };
 
   return (
-    <>
-      <div className="flex justify-center items-center min-h-screen gap-3">
-        <div className=" flex flex-col justify-center items-center gap-5">
+    <div className="min-h-screen overflow-hidden relative w-full flex justify-center items-center ">
+      <video className="absolute inset-0 h-full w-full -z-10 object-cover" playsInline autoPlay loop muted>
+        <source src="/public/videos/mainbg.mp4" />
+      </video>
+      <div className="flex justify-center items-center gap-5  backdrop-blur-xl bg-white/5 border border-white/5 rounded-2xl p-8 shadow-gray-900 shadow-2xl">
+        <div className=" flex flex-col justify-center items-center gap-5 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl">
           {count > 0 && <Box />}
           <div className="flex justify-center items-center gap-2">
             <button
               className={`h-10 w-10 rounded-full bg-blue-950 transition-transform ${
-                !animate ? "animate-pulse" : false
+                !animate ? " bg-green-400 animate-pulse " : false
               } hover:bg-green-500 text-white hover:text-black `}
               onClick={() => {
                 setCount(count + 1);
@@ -49,10 +52,10 @@ function Home() {
           </div>
         </div>
         <div className="flex flex-col align-text-top h-50 w-96 gap-4 ">
-          <div>
-            <h3>MUHAMMED FARIS</h3>
-            <h1>FULL-STACK DEVELOPER</h1>
-            <p className="max-w-lg text-sm ">
+          <div className="text-white">
+            <h3 className="font-bold text-3xl">MUHAMMED FARIS</h3>
+            <h1 className="font-light text-lg">FULL-STACK DEVELOPER</h1>
+            <p className="max-w-lg text-sm  ">
               Hi, I'm a Full Stack Developer who builds fast, scalable, and
               user-focused web applications. I specialize in crafting clean
               frontends and robust backends using modern JavaScript
@@ -63,31 +66,34 @@ function Home() {
 
           <div className="flex  items-center gap-3 ">
             <button
-              className="bg-blue-950 hover:bg-transparent hover:border-2  hover:border-blue-950 
-              h-8 w-32 text-sm hover:text-blue-950 text-white rounded-2xl"
+              className="bg-blue-950 hover:bg-transparent hover:border-2  hover:border-white 
+              h-8 w-32 text-sm hover:text-gray-300 text-white rounded-2xl"
               onClick={() => Navigate("/contact")}
             >
               GET IN TOUCH
             </button>
-            <div className="gap-1 flex items-center text-gray-500 animate-bounce">
+            <div className="gap-1 flex items-center text-green-400 animate-bounce">
               <img src="/public/images/Ellipse 2 (1).png" alt="" />
               <p>Available Now</p>
             </div>
           </div>
         </div>
         <div
-          
-          className="bg-blue-950 h-80 w-80  rounded-full"
+          className="bg-transparent h-80 w-80  rounded-full"
           style={{
             clipPath:
               "polygon(0% 0% , 100% 0% , 100% 50% , 75% 100% , 25% 100% , 0% 50%)",
           }}
         >
-
-           <img className="relative bottom-8 mask-b-from-0.5 brightness-110" src="/public/images/faris.png" alt="" />
+          <img
+            className="relative bottom-8 mask-b-from-0.5 brightness-110"
+            src="/public/images/faris.png"
+            alt=""
+          />
         </div>
       </div>
-    </>
+     
+    </div>
   );
 }
 
