@@ -14,10 +14,10 @@ function Navbar() {
           shadow-2xl shadow-black/30
       "
       >
-        <div className="flex justify-center items-center m-0 p-0">
+        <div className="flex justify-center items-center ">
           <img
-            className="h-11 w-29"
-            src="/public/images/mylogo.png"
+            className="h-25 w-35 animate-pulse hover:scale-90"
+            src="/public/images/logo.png"
             alt="mylogo"
           />{" "}
         </div>

@@ -2,7 +2,16 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    < >
+    <div className="min-h-screen overflow-hidden relative w-full flex justify-center items-center">
+      <video className=" absolute h-full w-full -z-10 object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+      <source src="/public/videos/secondbg.mp4" />
+
+      </video>
       <div className="min-h-screen flex justify-center items-center ">
         <div className="flex justify-center items-center gap-20">
           <div className="h-96 w-96 ">
@@ -10,7 +19,7 @@ function About() {
             <img className="relative left-4 bottom-92 rounded-3xl" src="/public/images/faris.jpeg" alt="" />
           </div>
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 text-white">
               <h1 className="text-3xl font-bold">ABOUT-ME</h1>
               <p className="max-w-lg text-sm">
                 I am a full-stack web developer working with Node.js, Express,
@@ -78,7 +87,7 @@ function About() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
