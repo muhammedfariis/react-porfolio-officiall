@@ -145,7 +145,7 @@ const Contact = () => {
         </div>
 
         {/* connect social */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 backdrop-blur-3xl shadow-2xl rounded-2xl h-fit p-5">
             <div className="flex justify-center items-center">
                 <h1>Connect on Social Media</h1>
             </div>
@@ -204,18 +204,23 @@ const Contact = () => {
             </div>
 
              <div className="flex items-center border-2 gap-1 w-60 rounded-2xl ">
-              <a href="https://www.linkedin.com/jobs/muhammedfariis">
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-8 h-8 rounded bg-white hover:scale-95  transition duration-300 "
-              >
-                <path d="M4.98 3.5a2.5 2.5 0 11.02 5 2.5 2.5 0 01-.02-5zM3 8.98h4v12H3zM9.98 8.98h3.8v1.64h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-5.3c0-1.26-.02-2.89-1.76-2.89-1.76 0-2.03 1.38-2.03 2.8V21h-4z" />
-              </svg>
-            </a>
+                 <a
+                    href="https://wa.me/919562166107"
+                    
+                  >
+                    <svg
+                      class="w-8 h-7  rounded hover:scale-95  transition duration-300 "
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.52 3.48A11.91 11.91 0 0 0 12.06 0C5.5 0 .15 5.35.15 11.91c0 2.1.55 4.16 1.6 5.98L0 24l6.3-1.65a11.9 11.9 0 0 0 5.76 1.47h.01c6.56 0 11.91-5.35 11.91-11.91a11.84 11.84 0 0 0-3.46-8.43ZM12.07 21.4a9.44 9.44 0 0 1-4.81-1.31l-.34-.2-3.74.98 1-3.65-.22-.37a9.45 9.45 0 1 1 8.11 4.55Zm5.18-7.07c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.74.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.4-.84-.75-1.41-1.68-1.57-1.96-.16-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.56-.47-.49-.64-.5h-.55c-.19 0-.49.07-.75.35-.26.28-.98.96-.98 2.35s1 2.73 1.14 2.92c.14.19 1.97 3.01 4.78 4.22.67.29 1.2.46 1.61.59.68.22 1.3.19 1.79.12.55-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33Z"
+                      />
+                    </svg>
+                </a>
                 <div className="">
-                   <h1>LinkedIn</h1>
-                   <h6>Connect</h6> 
+                   <h1>WhatsApp</h1>
+                   <h6>Chat With Me</h6> 
                 </div>
             </div>
             </div>
