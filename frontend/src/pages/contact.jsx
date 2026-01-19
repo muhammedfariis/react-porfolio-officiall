@@ -5,8 +5,16 @@ const Contact = () => {
   const [values, setValues] = useState("");
 
   return (
-    <div className="flex m-10 ">
-      <div className="flex gap-3">
+    <div className=" overflow-hidden relative min-h-screen items-center justify-center flex text-white border-blue-950 ">
+        <video className="absolute w-full h-full object-cover"
+        playsInline
+        autoPlay
+        loop
+        muted
+        >
+            <source src="/public/videos/secondbg.mp4"/>
+        </video>
+      <div className="flex gap-3 p-5">
         <div className="flex flex-col justify-center items-center p-3 gap-3 backdrop-blur-3xl shadow-2xl bg-white/10 rounded-2xl ">
           <div className=" flex flex-col items-center justify-center">
             <h1>Send a Message</h1>
@@ -14,40 +22,40 @@ const Contact = () => {
           <div className="flex flex-col justify-center items-center w-full rounded h-full gap-3">
             <input
               placeholder="Name"
-              className="h-8 w-150  p-2 outline-none border-2 rounded-lg"
+              className="h-8 w-150  p-2 outline-none border-2  border-blue-950 rounded-lg"
               required
               type="text"
             />
             <input
               placeholder="Email"
-              className="h-8 w-150 p-2 outline-none border-2 rounded-lg"
+              className="h-8 w-150 p-2 outline-none border-2  border-blue-950 rounded-lg"
               required
               type="email"
             />
             <input
               placeholder="Phone"
-              className="h-8 w-150 p-2 outline-none border-2 rounded-lg"
+              className="h-8 w-150 p-2 outline-none border-2  border-blue-950 rounded-lg"
               required
               type="tel"
             />
             <select
               value={values}
               onChange={(e) => setValues(e.target.value)}
-              className="h-8 w-150 outline-none border-2 rounded-lg"
+              className="h-8 w-150 outline-none border-2  border-blue-950 rounded-lg"
               required
             >
               <option value="" disabled>
                 Select An Option
               </option>
-              <option value="Job Enquiry">Job Enquiry</option>
-              <option value="Collaborations">Collaborations</option>
-              <option value="Project Enquiry">Project Enquiry</option>
-              <option value="Freelance">Freelance</option>
-              <option value="Consultants">Consultants</option>
+              <option className="bg-purple-950 text-white   " value="Job Enquiry">Job Enquiry</option>
+              <option className="bg-purple-950 text-white   " value="Collaborations">Collaborations</option>
+              <option className="bg-purple-950 text-white   " value="Project Enquiry">Project Enquiry</option>
+              <option className="bg-purple-950 text-white   " value="Freelance">Freelance</option>
+              <option className="bg-purple-950 text-white   " value="Consultants">Consultants</option>
             </select>
-            <textarea className="h-20 w-150 outline-none border-2 rounded-lg"></textarea>
+            <textarea className="h-20 w-150 outline-none border-2  border-blue-950 rounded-lg"></textarea>
             <div className="h-15">
-              <button className="h-8 w-150 outline-none border-2 rounded-lg">
+              <button className="h-8 w-150 outline-none border-2  border-blue-950 rounded-lg">
                 submit
               </button>
             </div>
@@ -72,9 +80,7 @@ const Contact = () => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
@@ -94,13 +100,11 @@ const Contact = () => {
                   <svg
                       class="w-6 h-6 text-success"
                       fill="none"
-                      stroke="currentColor"
+                      stroke="orange"
                       viewBox="0 0 24 24"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                     
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
@@ -117,15 +121,13 @@ const Contact = () => {
           <div >
             <div className="flex gap-1.5">
                       <svg
-                      class="w-6 h-6 text-primary"
+                      class="w-6 h-6 "
                       fill="none"
-                      stroke="currentColor"
+                      stroke="orange"
                       viewBox="0 0 24 24"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                    
                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                       />
                       <path
@@ -154,11 +156,11 @@ const Contact = () => {
             
             {/* div 1 */}
             <div className="flex flex-col gap-5">
-              <div className="flex items-center border-2 w-60 gap-1 rounded-2xl ">
+              <div className="flex items-center w-60 gap-2 rounded-2xl ">
                       <svg
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="w-8 h-8 text-black hover:scale-95  transition duration-300 "
+                class="w-8 h-8  hover:scale-95  transition duration-300 "
               >
                 <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.11 3.29 9.44 7.86 10.97.57.1.78-.25.78-.55v-2.1c-3.2.7-3.87-1.55-3.87-1.55-.53-1.36-1.29-1.72-1.29-1.72-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.2-3.1-.12-.3-.52-1.5.12-3.13 0 0 .97-.31 3.18 1.18a11.1 11.1 0 015.8 0c2.2-1.49 3.18-1.18 3.18-1.18.64 1.63.24 2.83.12 3.13.75.81 1.2 1.84 1.2 3.1 0 4.42-2.69 5.39-5.25 5.67.41.35.78 1.04.78 2.1v3.11c0 .3.2.66.79.55A11.53 11.53 0 0023.5 12C23.5 5.74 18.27.5 12 .5z" />
               </svg>
@@ -168,12 +170,12 @@ const Contact = () => {
                 </div>
             </div>
 
-             <div className="flex items-center border-2 gap-1 w-60 rounded-2xl ">
+             <div className="flex items-center  gap-2 w-60 rounded-2xl ">
               <a href="https://www.linkedin.com/jobs/muhammedfariis">
               <svg
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="w-8 h-8 rounded bg-white hover:scale-95  transition duration-300 "
+                class="w-8 h-8 rounded hover:scale-95  transition duration-300 "
               >
                 <path d="M4.98 3.5a2.5 2.5 0 11.02 5 2.5 2.5 0 01-.02-5zM3 8.98h4v12H3zM9.98 8.98h3.8v1.64h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-5.3c0-1.26-.02-2.89-1.76-2.89-1.76 0-2.03 1.38-2.03 2.8V21h-4z" />
               </svg>
@@ -187,12 +189,12 @@ const Contact = () => {
 {/* div2 */}
         
                 <div className="flex flex-col gap-5">
-              <div className="flex items-center border-2 w-60 gap-1 rounded-2xl ">
+              <div className="flex items-center  w-60 gap-1 rounded-2xl ">
                <a href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1">
               <svg
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="w-8 h-8 text-black rounded hover:scale-95  transition duration-300 "
+                class="w-8 h-8 rounded hover:scale-95  transition duration-300 "
               >
                 <path  d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3.5A5.5 5.5 0 1017.5 13 5.507 5.507 0 0012 7.5zm0 9A3.5 3.5 0 1115.5 13 3.504 3.504 0 0112 16.5zM18 6.2a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z" />
               </svg>
@@ -203,7 +205,7 @@ const Contact = () => {
                 </div>
             </div>
 
-             <div className="flex items-center border-2 gap-1 w-60 rounded-2xl ">
+             <div className="flex items-center border-0 border-orange-500 gap-1 w-60 rounded-2xl ">
                  <a
                     href="https://wa.me/919562166107"
                     
