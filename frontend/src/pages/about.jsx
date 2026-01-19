@@ -74,6 +74,11 @@ function About() {
                 src="/public/images/node-js.svg"
                 alt=""
               />
+                <img
+                className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120"
+                src="/public/images/mongodb.svg"
+                alt=""
+              />
             </div>
             <Link
               to="/public/pdf/MuhammedFaris_resume.pdf"
