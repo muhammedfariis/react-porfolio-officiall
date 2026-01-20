@@ -27,7 +27,7 @@ function Home() {
         <source src="/public/videos/secondbg.mp4" />
       </video>
       <div className="flex justify-center items-center gap-5  backdrop-blur-xl bg-white/5 border border-white/5 rounded-2xl p-8 shadow-gray-900 shadow-2xl">
-        <div className=" flex flex-col justify-center items-center gap-5 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl">
+        <div className=" flex flex-col justify-center  items-center gap-5 backdrop-blur-xl border border-white/20 rounded-2xl p-8 shadow-2xl">
           {count > 0 && <Box />}
           <div className="flex justify-center items-center gap-2">
             <button
@@ -51,7 +51,7 @@ function Home() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col align-text-top h-50 w-96 gap-4 ">
+        <div className="flex flex-col align-text-top h-50 w-96 gap-4  ">
           <div className="text-white">
             <h3 className="font-bold text-3xl">MUHAMMED FARIS</h3>
             <h1 className="font-light text-lg">FULL-STACK DEVELOPER</h1>

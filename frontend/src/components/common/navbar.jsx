@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import NavButton from "./button_navbar";
+import ThemeToggle from "../themetoggle";
 function Navbar() {
   const Navigate = useNavigate();
   return (
@@ -29,7 +30,8 @@ function Navbar() {
         </div>
 
         <div className="flex justify-center items-center rounded-full h-10 w-11 bg-amber-50 hover:-scale-y-100">
-          <img className="" src="/public/images/toggleforlight.svg" alt="" />
+          {/* <img className="" src="/public/images/toggleforlight.svg" alt="" /> */}
+          <ThemeToggle/>
         </div>
       </nav>
     </div>
