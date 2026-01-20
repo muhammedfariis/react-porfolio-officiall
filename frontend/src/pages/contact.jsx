@@ -113,7 +113,7 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="flex flex-col gap-4 backdrop-blur-3xl shadow-2xl rounded-2xl p-5 w-full sm:w-80">
+        <div className="flex flex-col gap-4 backdrop-blur-3xl h-fit shadow-2xl rounded-2xl p-5 w-full sm:w-80">
           <h1 className="font-bold text-2xl text-center">Quick Contact</h1>
 
           <div>
@@ -128,7 +128,7 @@ const Contact = () => {
               </svg>
               <h1>Email</h1>
             </div>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=muhammedfariis101@gmail.com">
+            <a className="text-sm" href="https://mail.google.com/mail/?view=cm&fs=1&to=muhammedfariis101@gmail.com">
               muhammedfariis101@gmail.com
             </a>
             <p>Response within 24 hours</p>
