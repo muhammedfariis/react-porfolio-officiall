@@ -5,6 +5,7 @@ import About from "../pages/about";
 import Project from "../pages/project";
 import Footer from "../components/common/footer";
 import Contact from "../pages/contact";
+import MouseMove from "../components/common/mousemove";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer/>
+     <MouseMove/>
     </>
   );
 }
