@@ -53,7 +53,7 @@ function Navbar() {
 
   const go = (path) => {
     Navigate(path);
-    setOpen(false); // close menu after navigate
+    setOpen(false);
   };
 
   return (
@@ -76,7 +76,6 @@ function Navbar() {
           shadow-2xl shadow-black/30
         "
       >
-        {/* LOGO */}
         <div className="flex justify-center items-center">
           <img
             className="h-14 w-24 sm:h-20 sm:w-32 md:h-25 md:w-35 animate-pulse hover:scale-90"
@@ -85,7 +84,6 @@ function Navbar() {
           />
         </div>
 
-        {/* DESKTOP MENU */}
         <div className="hidden md:flex justify-center items-center gap-3">
           <NavButton text="HOME" onClick={() => go("/")} />
           <NavButton text="ABOUT" onClick={() => go("/about")} />
@@ -93,13 +91,11 @@ function Navbar() {
           <NavButton text="CONTACT" onClick={() => go("/contact")} />
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="flex items-center gap-3">
           <div className="flex justify-center items-center rounded-full h-9 w-9 sm:h-10 sm:w-11 bg-amber-50">
             <ThemeToggle />
           </div>
 
-          {/* HAMBURGER */}
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden text-white text-3xl"
@@ -120,8 +116,7 @@ function Navbar() {
     gap-6
     z-50
     p-5
-      transition-all duration-300 ease-out
-      opacity-100 translate-y-0
+  
   ">
     {/* CLOSE BUTTON */}
     <button
