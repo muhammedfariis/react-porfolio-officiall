@@ -21,7 +21,7 @@ function Footer() {
         <div className="flex gap-2 flex-col justify-center items-center text-white">
           <h1 className="font-bold text-lg md:text-xl">Quick Links</h1>
           <div className="flex flex-col text-center text-white">
-            <Link className="font-semibold text-base md:text-lg hover:scale-95 transition duration-300" to="/">Home</Link>
+            <Link hrefLang="" className="font-semibold text-base md:text-lg hover:scale-95 transition duration-300" to="/">Home</Link>
             <Link className="font-semibold text-base md:text-lg hover:scale-95 transition duration-300" to="/about">About</Link>
             <Link className="font-semibold text-base md:text-lg hover:scale-95 transition duration-300" to="/project">Project</Link>
             <Link className="font-semibold text-base md:text-lg hover:scale-95 transition duration-300" to="/contact">Contact</Link>
