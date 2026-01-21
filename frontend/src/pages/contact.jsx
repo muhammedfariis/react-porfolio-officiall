@@ -6,7 +6,6 @@ const Contact = () => {
   const [submit, setSubmit] = useState("");
 
   const submitForm = (e) => {
-    e.preventDefault();
     setSubmit("");
   };
 
