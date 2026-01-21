@@ -18,7 +18,6 @@ function Footer() {
           </h1>
         </div>
 
-        {/* Quick Links */}
         <div className="flex gap-2 flex-col justify-center items-center text-white">
           <h1 className="font-bold text-lg md:text-xl">Quick Links</h1>
           <div className="flex flex-col text-center text-white">
@@ -29,7 +28,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Social */}
         <div className="flex flex-col justify-center items-center gap-3">
           <h1 className="font-bold text-lg md:text-xl text-white">Connect</h1>
           <div className="flex gap-4">
@@ -66,7 +64,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="flex flex-col gap-2 pb-3 px-5 text-center md:text-left">
         <div className="h-1 w-full bg-gray-400 mask-r-from-0% mask-l-from-0%"></div>
         <p className="text-white text-sm md:text-base">

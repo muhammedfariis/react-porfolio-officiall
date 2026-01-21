@@ -10,7 +10,6 @@ export default function ThemeToggle() {
       aria-label="Toggle Theme"
       className="relative w-10 h-10 flex items-center justify-center"
     >
-      {/* SUN ICON (Light mode) */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className={`w-7 h-7 transition-all duration-300
@@ -27,7 +26,6 @@ export default function ThemeToggle() {
         />
       </svg>
 
-      {/* MOON ICON (Dark mode) */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

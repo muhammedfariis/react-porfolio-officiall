@@ -61,13 +61,16 @@ function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col text-center lg:text-left justify-center h-auto lg:h-50 w-full lg:w-96 gap-4">
+        <div className="flex flex-col text-center lg:text-left justify-center h-auto lg:h-50 w-full lg:w-96 gap-5">
           <div className="text-white">
-            <h3 className="font-bold text-2xl md:text-3xl">MUHAMMED FARIS</h3>
+            <h3 className="font-bold text-2xl md:text-3xl font-saira">
+              MUHAMMED FARIS
+            </h3>
             <h1 className="font-light text-base md:text-lg">
               FULL-STACK DEVELOPER
             </h1>
-            <p className="max-w-lg text-sm md:text-base">
+
+            <p className="max-w-lg mx-auto lg:mx-0 text-sm text-center lg:text-left ">
               Hi, I'm a Full Stack Developer who builds fast, scalable, and
               user-focused web applications. I specialize in crafting clean
               frontends and robust backends using modern JavaScript

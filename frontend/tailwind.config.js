@@ -1,8 +1,16 @@
-module.exports = {
+import { defineConfig } from "tailwindcss"
+
+export default defineConfig({
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        alan: ["'Alan Sans'", "sans-serif"],
+        josefin: ["'Josefin Sans'", "sans-serif"],
+        quicksand: ["'Quicksand'", "sans-serif"],
+        saira: ["'Saira'", "sans-serif"],
+      },
       animation: {
         "fade-in": "fadeIn 0.8s ease-out forwards",
         "slide-up": "slideUp 0.8s ease-out forwards",
@@ -19,4 +27,4 @@ module.exports = {
       },
     },
   },
-};
+})

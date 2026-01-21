@@ -251,9 +251,8 @@ const Project = () => {
           </div>
         </div>
 
-        {/* All Projects Button */}
         <a href="https://github.com/muhammedfariis">
-          <button className="h-10 w-36 bg-linear-to-bl from-yellow-400 border-2 border-gray-600 rounded-2xl transition hover:scale-105">
+          <button className="h-10 w-36 bg-linear-to-bl text-lg font-bold from-yellow-400 border-2 border-gray-600 rounded-2xl transition hover:scale-105">
             All Projects
           </button>
         </a>
