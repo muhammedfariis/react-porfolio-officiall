@@ -1,0 +1,15 @@
+{
+    "chat.mcp.serverSampling": {
+        "Portfolio/.vscode/mcp.json: console-ninja": {
+            "allowedModels": [
+                "copilot/auto",
+                "copilot/claude-haiku-4.5",
+                "copilot/gpt-4.1",
+                "copilot/gpt-4o",
+                "copilot/gpt-5-mini",
+                "copilot/oswe-vscode-prime"
+            ]
+        }
+    }
+}
+
