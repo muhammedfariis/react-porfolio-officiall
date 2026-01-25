@@ -2,7 +2,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import NavButton from "./button_navbar";
-import ThemeToggle from "../themetoggle";
 
 function Navbar() {
   const Navigate = useNavigate();
@@ -50,7 +49,6 @@ function Navbar() {
 
         <div className="flex items-center gap-3">
           <div className="flex justify-center items-center rounded-full h-9 w-9 sm:h-10 sm:w-11 bg-amber-50">
-            <ThemeToggle />
           </div>
 
           <button

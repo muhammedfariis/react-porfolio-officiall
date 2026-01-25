@@ -29,7 +29,9 @@ const MouseMove = () => {
         backRef.current.style.left = `${backpose.current.x}px`;
         backRef.current.style.top = `${backpose.current.y}px`;
 
-        requestAnimationFrame(animate);
+        requestAnimationFrame(animate); 
+
+        // this for smooth animation they talk to browser every refresh we want to animate again eg : loop
       };
 
       animate();
