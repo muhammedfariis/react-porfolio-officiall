@@ -53,7 +53,7 @@ function Navbar() {
 
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden text-white text-3xl"
+            className="md:hidden text-whit text-3xl"
           >
             {open ? "✖" : "☰"}
           </button>
