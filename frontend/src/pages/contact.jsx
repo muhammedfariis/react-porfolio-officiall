@@ -8,7 +8,7 @@ const Contact = () => {
   const submitForm = (e) => {
     setSubmit("");
   };
-
+ 
   return (
     <div className="overflow-hidden relative min-h-screen items-center justify-center flex text-white px-4">
       <video
@@ -67,7 +67,7 @@ const Contact = () => {
                 className="bg-purple-950 text-white max-w-full whitespace-normal"
                 value="Job Enquiry"
               >
-                Job Enquiry
+                Job Enquiries
               </option>
               <option
                 className="bg-purple-950 text-white max-w-full whitespace-normal"
