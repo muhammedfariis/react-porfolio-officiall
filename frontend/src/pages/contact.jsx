@@ -67,7 +67,7 @@ const Contact = () => {
                 className="bg-purple-950 text-white max-w-full whitespace-normal"
                 value="Job Enquiry"
               >
-                Job Enquiries
+                Job Enquiriy
               </option>
               <option
                 className="bg-purple-950 text-white max-w-full whitespace-normal"
