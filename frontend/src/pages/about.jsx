@@ -11,7 +11,7 @@ function About() {
         muted
         playsInline
       >
-        <source src="/public/videos/secondbg.mp4" />
+        <source src="/videos/secondbg.mp4" />
       </video>
 
       <div className="min-h-screen flex justify-center items-center w-full max-w-6xl">
@@ -23,7 +23,7 @@ function About() {
 
             <img
               className="relative left-1 top-4 rounded-3xl lg:w-96 lg:h-96 w-60 md:left-9 sm:h-55 sm:w-50 md:h-90 md:w-90 h-auto"
-              src="/public/images/faris.jpeg"
+              src="/images/faris.jpeg"
               alt=""
             />
           </div>
@@ -53,20 +53,20 @@ function About() {
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-5">
 
-              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/public/images/react.png" alt="" />
-              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/public/images/js.png" alt="" />
-              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/public/images/tailwind.png" alt="" />
-              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/public/images/html.png" alt="" />
-              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/public/images/css.png" alt="" />
-              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/public/images/Express.png" alt="" />
-              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/public/images/node-js.svg" alt="" />
-              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/public/images/mongodb.svg" alt="" />
+              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/images/react.png" alt="" />
+              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/images/js.png" alt="" />
+              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/images/tailwind.png" alt="" />
+              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/images/html.png" alt="" />
+              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/images/css.png" alt="" />
+              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/images/Express.png" alt="" />
+              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/images/node-js.svg" alt="" />
+              <img className="h-10 w-10 transition duration-500 ease-in-out hover:scale-120" src="/images/mongodb.svg" alt="" />
 
             </div>
 
             <div className="flex justify-center p-10 lg:p-0 md:p-0 sm:p-0 lg:justify-start">
               <Link
-                to="/public/pdf/MuhammedFaris_resume.pdf"
+                to="/pdf/MuhammedFaris_resume.pdf"
                 target="_blank"
                 download
               >

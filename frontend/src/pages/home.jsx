@@ -30,7 +30,7 @@ function Home() {
         loop
         muted
       >
-        <source src="/public/videos/secondbg.mp4" />
+        <source src="/videos/secondbg.mp4" />
       </video>
 
       <div className="flex flex-col lg:flex-row justify-center items-center gap-8 backdrop-blur-xl bg-white/5 border border-white/5 rounded-2xl p-6 md:p-8 shadow-gray-900 shadow-2xl max-w-6xl w-full">
@@ -89,7 +89,7 @@ function Home() {
             </button>
 
             <div className="gap-1 flex items-center text-green-400 animate-bounce">
-              <img src="/public/images/Ellipse 2 (1).png" alt="" />
+              <img src="/images/Ellipse 2 (1).png" alt="" />
               <p>Available Now</p>
             </div>
           </div>
@@ -104,7 +104,7 @@ function Home() {
         >
           <img
             className="relative bottom-6 md:bottom-8 mask-b-from-0.5 brightness-110 max-h-full"
-            src="/public/images/faris.png"
+            src="/images/faris.png"
             alt=""
           />
         </div>

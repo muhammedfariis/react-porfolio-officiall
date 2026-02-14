@@ -12,7 +12,7 @@ const Project = () => {
         loop
         muted
       >
-        <source src="/public/videos/secondbg.mp4" />
+        <source src="/videos/secondbg.mp4" />
       </video>
 
       <div className="flex flex-col items-center justify-center gap-6 min-h-screen p-4 sm:p-6 md:p-10 w-full max-w-7xl">
@@ -49,7 +49,7 @@ const Project = () => {
             <div className="h-48 w-full overflow-hidden rounded-t-2xl">
               <img
                 className="h-full w-full object-cover"
-                src="/public/images/project1.png"
+                src="/images/project1.png"
                 alt=""
               />
             </div>
@@ -64,12 +64,12 @@ const Project = () => {
               <h1 className="font-bold text-base">Technologies Used</h1>
 
               <div className="flex flex-wrap justify-center gap-2">
-                <img className="h-8 w-8" src="/public/images/node-js.svg" />
-                <img className="h-8 w-8" src="/public/images/Express.png" />
-                <img className="h-8 w-8" src="/public/images/mongodb.svg" />
-                <img className="h-8 w-8" src="/public/images/html.png" />
-                <img className="h-8 w-8" src="/public/images/css.png" />
-                <img className="h-8 w-8" src="/public/images/js.png" />
+                <img className="h-8 w-8" src="/images/node-js.svg" />
+                <img className="h-8 w-8" src="/images/Express.png" />
+                <img className="h-8 w-8" src="/images/mongodb.svg" />
+                <img className="h-8 w-8" src="/images/html.png" />
+                <img className="h-8 w-8" src="/images/css.png" />
+                <img className="h-8 w-8" src="/images/js.png" />
               </div>
               <a href="https://github.com/muhammedfariis">
                 <button className="w-28 h-10 bg-linear-to-bl from-yellow-400 border-2 border-gray-600 rounded-2xl hover:scale-105">
@@ -83,7 +83,7 @@ const Project = () => {
             <div className="h-48 w-full overflow-hidden rounded-t-2xl">
               <img
                 className="h-full w-full object-cover"
-                src="/public/images/project4.png"
+                src="/images/project4.png"
               />
             </div>
 
@@ -95,12 +95,12 @@ const Project = () => {
 
               <h1 className="font-bold text-lg">Technologies Used</h1>
               <div className="flex flex-wrap justify-center gap-2">
-                <img className="h-10 w-10" src="/public/images/node-js.svg" />
-                <img className="h-10 w-10" src="/public/images/Express.png" />
-                <img className="h-10 w-10" src="/public/images/mongodb.svg" />
-                <img className="h-10 w-10" src="/public/images/html.png" />
-                <img className="h-10 w-10" src="/public/images/css.png" />
-                <img className="h-10 w-10" src="/public/images/js.png" />
+                <img className="h-10 w-10" src="/images/node-js.svg" />
+                <img className="h-10 w-10" src="/images/Express.png" />
+                <img className="h-10 w-10" src="/images/mongodb.svg" />
+                <img className="h-10 w-10" src="/images/html.png" />
+                <img className="h-10 w-10" src="/images/css.png" />
+                <img className="h-10 w-10" src="/images/js.png" />
               </div>
 
               <a href="https://github.com/muhammedfariis">
@@ -115,7 +115,7 @@ const Project = () => {
             <div className="h-48 w-full overflow-hidden rounded-t-2xl">
               <img
                 className="h-full w-full object-cover"
-                src="/public/images/project3.png"
+                src="/images/project3.png"
               />
             </div>
 
@@ -127,12 +127,12 @@ const Project = () => {
 
               <h1 className="font-bold text-lg">Technologies Used</h1>
               <div className="flex flex-wrap justify-center gap-2">
-                <img className="h-10 w-10" src="/public/images/node-js.svg" />
-                <img className="h-10 w-10" src="/public/images/Express.png" />
-                <img className="h-10 w-10" src="/public/images/mongodb.svg" />
-                <img className="h-10 w-10" src="/public/images/html.png" />
-                <img className="h-10 w-10" src="/public/images/css.png" />
-                <img className="h-10 w-10" src="/public/images/js.png" />
+                <img className="h-10 w-10" src="/images/node-js.svg" />
+                <img className="h-10 w-10" src="/images/Express.png" />
+                <img className="h-10 w-10" src="/images/mongodb.svg" />
+                <img className="h-10 w-10" src="/images/html.png" />
+                <img className="h-10 w-10" src="/images/css.png" />
+                <img className="h-10 w-10" src="/images/js.png" />
               </div>
 
               <a href="https://github.com/muhammedfariis">
@@ -148,7 +148,7 @@ const Project = () => {
             <div className="h-48 w-full overflow-hidden rounded-t-2xl">
               <img
                 className="h-full w-full object-cover"
-                src="/public/images/project2.png"
+                src="/images/project2.png"
               />
             </div>
 
@@ -160,9 +160,9 @@ const Project = () => {
 
               <h1 className="font-bold text-lg">Technologies Used</h1>
               <div className="flex flex-wrap justify-center gap-2">
-                <img className="h-10 w-10" src="/public/images/html.png" />
-                <img className="h-10 w-10" src="/public/images/css.png" />
-                <img className="h-10 w-10" src="/public/images/js.png" />
+                <img className="h-10 w-10" src="/images/html.png" />
+                <img className="h-10 w-10" src="/images/css.png" />
+                <img className="h-10 w-10" src="/images/js.png" />
               </div>
 
               <a href="https://github.com/muhammedfariis">
@@ -178,7 +178,7 @@ const Project = () => {
             <div className="h-48 w-full overflow-hidden rounded-t-2xl">
               <img
                 className="h-full w-full object-cover"
-                src="/public/images/project5.png"
+                src="/images/project5.png"
               />
             </div>
 
@@ -190,9 +190,9 @@ const Project = () => {
 
               <h1 className="font-bold text-lg">Technologies Used</h1>
               <div className="flex flex-wrap justify-center gap-2">
-                <img className="h-10 w-10" src="/public/images/html.png" />
-                <img className="h-10 w-10" src="/public/images/css.png" />
-                <img className="h-10 w-10" src="/public/images/js.png" />
+                <img className="h-10 w-10" src="/images/html.png" />
+                <img className="h-10 w-10" src="/images/css.png" />
+                <img className="h-10 w-10" src="/images/js.png" />
               </div>
 
               <a href="https://github.com/muhammedfariis">
@@ -208,19 +208,19 @@ const Project = () => {
             <div className="h-48 w-full grid grid-cols-2 grid-rows-2 overflow-hidden rounded-t-2xl">
               <img
                 className="h-full w-full object-cover"
-                src="/public/images/project6-1.png"
+                src="/images/project6-1.png"
               />
               <img
                 className="h-full w-full object-cover"
-                src="/public/images/project6-2.png"
+                src="/images/project6-2.png"
               />
               <img
                 className="h-full w-full object-cover"
-                src="/public/images/project6-3.png"
+                src="/images/project6-3.png"
               />
               <img
                 className="h-full w-full object-cover"
-                src="/public/images/project6-4.png"
+                src="/images/project6-4.png"
               />
             </div>
 
@@ -232,13 +232,13 @@ const Project = () => {
 
               <h1 className="font-bold text-lg">Technologies Used</h1>
               <div className="flex flex-wrap justify-center gap-2">
-                <img className="h-10 w-10" src="/public/images/node-js.svg" />
-                <img className="h-10 w-10" src="/public/images/Express.png" />
-                <img className="h-10 w-10" src="/public/images/mongodb.svg" />
-                <img className="h-10 w-10" src="/public/images/html.png" />
-                <img className="h-10 w-10" src="/public/images/css.png" />
-                <img className="h-10 w-10" src="/public/images/react.png" />
-                <img className="h-10 w-8" src="/public/images/js.png" />
+                <img className="h-10 w-10" src="/images/node-js.svg" />
+                <img className="h-10 w-10" src="/images/Express.png" />
+                <img className="h-10 w-10" src="/images/mongodb.svg" />
+                <img className="h-10 w-10" src="/images/html.png" />
+                <img className="h-10 w-10" src="/images/css.png" />
+                <img className="h-10 w-10" src="/images/react.png" />
+                <img className="h-10 w-8" src="/images/js.png" />
               </div>
 
               <a href="https://github.com/muhammedfariis">

@@ -44,7 +44,7 @@ const MouseMove = () => {
     <>
       <img
         ref={backRef}
-        src="/public/images/ball.svg"
+        src="/images/ball.svg"
         width={20}
         height={20}
         style={{
@@ -56,7 +56,7 @@ const MouseMove = () => {
       />
       <img
         ref={frontRef}
-        src="/public/images/circle.svg"
+        src="/images/circle.svg"
         width={25}
         height={25}
         style={{

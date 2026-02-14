@@ -9,7 +9,7 @@ function Footer() {
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <img
             className="h-20 w-28 md:h-24 md:w-32 lg:h-28 lg:w-36 animate-bounce hover:scale-90"
-            src="/public/images/logo.png"
+            src="/images/logo.png"
             alt=""
           />
           <h1 className="max-w-md text-sm md:text-base lg:text-lg text-white">

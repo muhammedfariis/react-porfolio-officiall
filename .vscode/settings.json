@@ -10,6 +10,7 @@
                 "copilot/oswe-vscode-prime"
             ]
         }
-    }
+    },
+    "dotenv.enableAutocloaking": false
 }
 

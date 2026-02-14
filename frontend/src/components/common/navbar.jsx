@@ -2,6 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import NavButton from "./button_navbar";
+import {SunMoon} from "lucide-react"
 
 function Navbar() {
   const Navigate = useNavigate();
@@ -35,7 +36,7 @@ function Navbar() {
         <div className="flex justify-center items-center">
           <img
             className="h-14 w-24 sm:h-20 sm:w-32 md:h-25 md:w-35 animate-pulse hover:scale-90"
-            src="/public/images/logo.png"
+            src="/images/logo.png"
             alt="mylogo"
           />
         </div>
@@ -49,6 +50,7 @@ function Navbar() {
 
         <div className="flex items-center gap-3">
           <div className="flex justify-center items-center rounded-full h-9 w-9 sm:h-10 sm:w-11 bg-amber-50">
+            <SunMoon/>
           </div>
 
           <button

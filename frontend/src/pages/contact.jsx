@@ -18,7 +18,7 @@ const Contact = () => {
         loop
         muted
       >
-        <source src="/public/videos/secondbg.mp4" />
+        <source src="/videos/secondbg.mp4" />
       </video>
 
       <div className="flex flex-col lg:flex-row flex-wrap gap-6 p-5 max-w-6xl w-full justify-center">
