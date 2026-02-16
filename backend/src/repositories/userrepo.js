@@ -8,11 +8,11 @@ export class Userrepository extends Baserepository {
    }
 
    findOne(user){
-    return contact.findOne(user)
+    return contact.findOne({user})
    }
 
-   create(contact){
-    return contact.create(contact)
+   create(data){
+    return contact.create(data)
    }
 
 

@@ -1,12 +1,39 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios"
 
 const Contact = () => {
-  const [values, setValues] = useState("");
-  const [submit, setSubmit] = useState("");
+  const [submit, setSubmit] = useState({
+    Name : "",
+    Email : "",
+    Phone : "",
+    JobEnquiry : "",
+    Textarea : "",
+  });
 
-  const submitForm = (e) => {
-    setSubmit("");
+
+  const handleChange = (e)=>{
+    const {name , value} = e.target.value
+    setSubmit((prev)=>({
+      ...prev,
+      [name] : value
+    }))
+  }
+
+  const submitForm = async (e) => {
+    e.preventDefault()
+     try{   
+      
+       const api = await axios.post("http://localhost:8000/api/contacts/allContacts" , submit)
+       console.log(api.data);
+       
+       alert("submitted")      
+      setSubmit({Name : "" , Email : "" , Phone : '' , JobEnquiry : "" , Textarea : ""});
+     
+     }catch(err){
+      console.log(err);
+       alert("not submitted")
+     }
   };
  
   return (
@@ -30,15 +57,19 @@ const Contact = () => {
             onSubmit={submitForm}
           >
             <input
-              onChange={(e) => setSubmit(e.target.value)}
+              onChange={handleChange}
               placeholder="Name"
+              name="Name"
               className="h-12 w-full p-2 outline-none backdrop-blur-3xl shadow-2xl rounded-lg"
               required
+              value={submit.Name}
               type="text"
             />
 
             <input
-              onChange={(e) => setSubmit(e.target.value)}
+              onChange={handleChange}
+              value={submit.Email}
+              name="Email"
               placeholder="Email"
               className="h-12 w-full p-2 backdrop-blur-3xl outline-none shadow-2xl rounded-lg"
               required
@@ -46,7 +77,9 @@ const Contact = () => {
             />
 
             <input
-              onChange={(e) => setSubmit(e.target.value)}
+              onChange={handleChange}
+              value={submit.Phone}
+              name="Phone"
               placeholder="Phone"
               className="h-12 w-full p-2 outline-none backdrop-blur-3xl shadow-2xl rounded-lg"
               required
@@ -54,8 +87,9 @@ const Contact = () => {
             />
 
             <select
-              value={values}
-              onChange={(e) => setValues(e.target.value)}
+              value={submit.JobEnquiry}
+              onChange={handleChange}
+              name="JobEnquiry"
               className="h-12 p-1 w-full max-w-full outline-none backdrop-blur-3xl shadow-2xl rounded-lg truncate"
               required
             >
@@ -65,38 +99,40 @@ const Contact = () => {
 
               <option
                 className="bg-purple-950 text-white max-w-full whitespace-normal"
-                value="Job Enquiry"
+                value="job_enquiry"
               >
                 Job Enquiriy
               </option>
               <option
                 className="bg-purple-950 text-white max-w-full whitespace-normal"
-                value="Collaborations"
+                value="collaborations"
               >
                 Collaborations
               </option>
               <option
                 className="bg-purple-950 text-white max-w-full whitespace-normal"
-                value="Project Enquiry"
+                value="project_enquiry"
               >
                 Project Enquiry
               </option>
               <option
                 className="bg-purple-950 text-white max-w-full whitespace-normal"
-                value="Freelance"
+                value="freelance"
               >
                 Freelance
               </option>
               <option
                 className="bg-purple-950 text-white max-w-full whitespace-normal"
-                value="Consultants"
+                value="cunsultants"
               >
                 Consultants
               </option>
             </select>
 
             <textarea
-              onChange={(e) => setSubmit(e.target.value)}
+              onChange={handleChange}
+              name="Textarea"
+              value={submit.Textarea}
               placeholder="Tell about your project or opportunity..."
               className="h-30 w-full p-2 outline-none backdrop-blur-3xl shadow-2xl rounded-lg"
             ></textarea>

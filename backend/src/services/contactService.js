@@ -1,7 +1,8 @@
 import { httpMessage, httpStatus } from "../constants/http.js";
 class ContactService {
-  constructor(UserRepository) {
+  constructor(UserRepository , Mailservice) {
     this.UserRepository = UserRepository;
+    this.Mailservice = Mailservice
   }
 
   async createContact({ Name, Email, Phone, JobEnquiry, Textarea }) {
@@ -26,6 +27,8 @@ class ContactService {
     if (!contact) {
       throw new Error(httpStatus.BADREQUEST, httpMessage.NOT_CREATED);
     }
+
+    await this.Mailservice.sendContactMail(contact)
 
     return {
       messege: httpMessage.CREATED,

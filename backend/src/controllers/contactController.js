@@ -10,15 +10,12 @@ class ContactController {
       const response = await this.ContactService.createContact({
         ...req.body,
       });
-
-      if (!response) {
-        throw new Error(httpStatus.BADREQUEST, httpMessage.RESPONSE);
-      }
-
-      return {
-        success: true,
+      
+       res.json({
+      success: true,
         response,
-      };
+       })
+
     } catch (err) {
       console.log("error from controller : ", err);
       throw new Error(
