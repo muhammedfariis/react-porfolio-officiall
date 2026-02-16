@@ -1,4 +1,4 @@
-import { httpMessage, httpStatus } from "../constants/http";
+import { httpMessage, httpStatus } from "../constants/http.js";
 class ContactService {
   constructor(UserRepository) {
     this.UserRepository = UserRepository;

@@ -1,5 +1,5 @@
-import { Baserepository } from "./baserepo";
-import contact from "../models/contact";
+import { Baserepository } from "./baserepo.js";
+import contact from "../models/contact.js";
 
 export class Userrepository extends Baserepository {
 
