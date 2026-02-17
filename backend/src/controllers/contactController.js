@@ -11,17 +11,18 @@ class ContactController {
         ...req.body,
       });
       
-       res.json({
+       res.status(200).json({
       success: true,
         response,
        })
 
     } catch (err) {
       console.log("error from controller : ", err);
-      throw new Error(
-        httpStatus.INTERNAL_SERVER_ERROR,
-        httpMessage.INTERNAL_SERVER_ERROR,
-      );
+         return res.status(500).json({
+    success: false,
+    message: "Internal Server Error from controller",
+    error: err.message,
+  });
     }
   };
 }

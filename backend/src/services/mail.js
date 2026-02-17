@@ -15,6 +15,9 @@ class Mailservice {
   }
 
   async sendContactMail(contact) {
+      if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    throw new Error("Email credentials missing in environment variables");
+  }
 
     console.log("MAIL CHECK:", process.env.EMAIL_USER); 
 

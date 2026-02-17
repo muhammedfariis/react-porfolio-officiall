@@ -33,6 +33,9 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
+      const API = import.meta.env.VITE_BACKEND_URL
+      console.log("API : "  , API);
+      
       const api = await axios.post(
         `https://portfolio-41mc.onrender.com/api/contacts/allContacts`,
         submit,
