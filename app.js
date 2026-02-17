@@ -10,7 +10,16 @@ const PORT = process.env.PORT || 8000
 console.log("EMAIL:", process.env.EMAIL_USER);
 console.log("PASS:", process.env.EMAIL_PASS);
 
-app.use(cors())
+app.use(cors({
+  origin : [
+    "http://localhost:5173/",
+     "http://localhost:8000",
+     "https://portfolio-41mc.onrender.com"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials : true
+}))
+app.options("/", cors())
 app.use(express.json())
 app.use("/api/contacts",Router)
 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import AlertBox from "../components/common/alertBox";
+import { Import } from "lucide-react";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -33,7 +34,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const api = await axios.post(
-        "http://localhost:8000/api/contacts/allContacts",
+        `https://portfolio-41mc.onrender.com/api/contacts/allContacts`,
         submit,
       );
       console.log(api.data);
