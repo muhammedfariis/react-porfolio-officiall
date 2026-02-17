@@ -12,16 +12,19 @@ console.log("PASS:", process.env.EMAIL_PASS);
 
 app.use(cors({
   origin : [
-    "http://localhost:5173/",
+    "http://localhost:5173",
      "http://localhost:8000",
-     "https://portfolio-41mc.onrender.com"
+     "https://portfolio-41mc.onrender.com",
+      "https://muhammedfarisportfolio.netlify.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials : true
 }))
-app.options("/", cors())
 app.use(express.json())
 app.use("/api/contacts",Router)
+app.get("/", (req,res)=>{
+  res.send("Server Running 🚀");
+});
 
 dataBase()
 app.listen(PORT,()=>{

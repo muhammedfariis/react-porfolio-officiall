@@ -45,13 +45,13 @@ const Contact = () => {
         message: "MESSAGE SENT SUCCESSFULLY ✅",
       });
 
-      setSubmit({
-        Name: "",
-        Email: "",
-        Phone: "",
-        JobEnquiry: "",
-        Textarea: "",
-      });
+      // setSubmit({
+      //   Name: "",
+      //   Email: "",
+      //   Phone: "",
+      //   JobEnquiry: "",
+      //   Textarea: "",
+      // });
     } catch (err) {
       console.log(err);
       setAlert({
