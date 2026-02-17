@@ -1,32 +1,15 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 class Mailservice {
-
-  createTransporter() {
-    return nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+  constructor() {
+    this.resend = new Resend("re_KTox9VLT_EYNiYjCdhcQfBCWgMwRn4nc9");    
   }
 
   async sendContactMail(contact) {
-      if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
-    throw new Error("Email credentials missing in environment variables");
-  }
-
-    console.log("MAIL CHECK:", process.env.EMAIL_USER); 
-
-    const transporter = this.createTransporter();
-
     const { Name, Email, Phone, JobEnquiry, Textarea } = contact;
 
-    await transporter.sendMail({
-      from: `"Portfolio" <${process.env.EMAIL_USER}>`,
+    await this.resend.emails.send({
+      from: "Portfolio <onboarding@resend.dev>",
       to: process.env.EMAIL_USER,
       subject: `New Contact: ${JobEnquiry}`,
       html: `
