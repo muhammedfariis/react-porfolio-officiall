@@ -1,41 +1,68 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios"
+import axios from "axios";
+import AlertBox from "../components/common/alertBox";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
   const [submit, setSubmit] = useState({
-    Name : "",
-    Email : "",
-    Phone : "",
-    JobEnquiry : "",
-    Textarea : "",
+    Name: "",
+    Email: "",
+    Phone: "",
+    JobEnquiry: "",
+    Textarea: "",
   });
 
+  const [alert, setAlert] = useState({
+    show: false,
+    type: "info",
+    message: "",
+  });
 
-  const handleChange = (e)=>{
-    const {name , value} = e.target.value
-    setSubmit((prev)=>({
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setSubmit((prev) => ({
       ...prev,
-      [name] : value
-    }))
-  }
+      [name]: value,
+    }));
+  };
 
   const submitForm = async (e) => {
-    e.preventDefault()
-     try{   
-      
-       const api = await axios.post("http://localhost:8000/api/contacts/allContacts" , submit)
-       console.log(api.data);
-       
-       alert("submitted")      
-      setSubmit({Name : "" , Email : "" , Phone : '' , JobEnquiry : "" , Textarea : ""});
-     
-     }catch(err){
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const api = await axios.post(
+        "http://localhost:8000/api/contacts/allContacts",
+        submit,
+      );
+      console.log(api.data);
+
+      setAlert({
+        show: true,
+        type: "success",
+        message: "MESSAGE SENT SUCCESSFULLY ✅",
+      });
+
+      setSubmit({
+        Name: "",
+        Email: "",
+        Phone: "",
+        JobEnquiry: "",
+        Textarea: "",
+      });
+    } catch (err) {
       console.log(err);
-       alert("not submitted")
-     }
+      setAlert({
+        show: true,
+        type: "error",
+        messege: "FAILED TO SENT THE MESSAGE ❌",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
- 
+
   return (
     <div className="overflow-hidden relative min-h-screen items-center justify-center flex text-white px-4">
       <video
@@ -49,9 +76,15 @@ const Contact = () => {
       </video>
 
       <div className="flex flex-col lg:flex-row flex-wrap gap-6 p-5 max-w-6xl w-full justify-center">
+        
         <div className="flex flex-col justify-center items-center p-4 gap-3 backdrop-blur-3xl shadow-2xl bg-white/10 rounded-2xl w-full lg:max-w-lg">
           <h1 className="font-bold text-2xl">Send a Message</h1>
-
+            <AlertBox
+          show={alert.show}
+          type={alert.type}
+          message={alert.message}
+          onClose={() => setAlert((prev) => ({ ...prev, show: false }))}
+        />
           <form
             className="flex flex-col w-full max-w-full overflow-hidden rounded gap-3"
             onSubmit={submitForm}
@@ -139,10 +172,11 @@ const Contact = () => {
 
             <div className="h-15 flex items-center justify-center">
               <button
+                disabled={loading}
                 type="submit"
                 className="h-12 w-60 bg-linear-to-bl text-black text-lg from-yellow-400 border-2 border-gray-600 rounded-2xl transition duration-300 ease-in-out hover:scale-105"
               >
-                Send a Message
+                {loading ? "Sending.." : "Sent A Message"}
               </button>
             </div>
           </form>
@@ -163,7 +197,10 @@ const Contact = () => {
               </svg>
               <h1>Email</h1>
             </div>
-            <a className="text-sm" href="https://mail.google.com/mail/?view=cm&fs=1&to=muhammedfariis101@gmail.com">
+            <a
+              className="text-sm"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=muhammedfariis101@gmail.com"
+            >
               muhammedfariis101@gmail.com
             </a>
             <p>Response within 24 hours</p>
