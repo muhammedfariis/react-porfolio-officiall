@@ -1,9 +1,9 @@
-import Router from "./src/routers/contactRouter.js";
+import Router from "./backend/src/routers/contactRouter.js";
 import express from "express"
 import dotenv from "dotenv"
 dotenv.config()
 import cors from "cors"
-import dataBase from "./config/db.js";
+import dataBase from "./backend/config/db.js";
 const app = express()
 const PORT = process.env.PORT || 8000
 
